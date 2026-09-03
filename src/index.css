@@ -13,12 +13,12 @@ html {
   -webkit-font-smoothing: antialiased;
 }
 body {
-  background-color: #F8F6F1;
+  background-color: #f8f6f1;
   color: #222222;
 }
 ::selection {
-  background-color: #B65E3C;
-  color: #F5F1E8;
+  background-color: #b65e3c;
+  color: #f5f1e8;
 }
 html.arti-cursor,
 html.arti-cursor * {

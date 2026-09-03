@@ -1,13 +1,7 @@
-import { useRef } from "react";
-import { motion, useMotionValue, useSpring } from "framer-motion";
-import { useCursor } from "./CursorProvider";
-function MagneticButton({
-  children,
-  variant = "solid",
-  tone = "dark",
-  className = "",
-  onClick
-}) {
+import { useRef } from 'react';
+import { motion, useMotionValue, useSpring } from 'framer-motion';
+import { useCursor } from './CursorProvider';
+function MagneticButton({ children, variant = 'solid', tone = 'dark', className = '', onClick }) {
   const ref = useRef(null);
   const { setCursor, clearCursor } = useCursor();
   const x = useMotionValue(0);
@@ -26,18 +20,31 @@ function MagneticButton({
     y.set(0);
     clearCursor();
   };
-  const palette = variant === "solid" ? tone === "dark" ? "bg-ink text-ivory hover:bg-rust" : "bg-ivory text-ink hover:bg-rust hover:text-ivory" : variant === "outline" ? tone === "dark" ? "border border-ink/25 text-ink hover:border-ink hover:bg-ink hover:text-ivory" : "border border-ivory/40 text-ivory hover:border-ivory hover:bg-ivory hover:text-ink" : tone === "dark" ? "text-ink hover:text-rust" : "text-ivory hover:text-rust";
-  return <motion.button
-    ref={ref}
-    type="button"
-    onClick={onClick}
-    onMouseMove={handleMove}
-    onMouseEnter={() => setCursor()}
-    onMouseLeave={reset}
-    style={{ x: sx, y: sy }}
-    className={`inline-flex items-center justify-center gap-3 rounded-full px-8 py-4 font-sans text-[11px] uppercase tracking-[0.22em] transition-colors duration-300 ease-editorial focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-4 focus-visible:outline-rust ${palette} ${className}`}
-  >{children}</motion.button>;
+  const palette =
+    variant === 'solid'
+      ? tone === 'dark'
+        ? 'bg-ink text-ivory hover:bg-rust'
+        : 'bg-ivory text-ink hover:bg-rust hover:text-ivory'
+      : variant === 'outline'
+        ? tone === 'dark'
+          ? 'border border-ink/25 text-ink hover:border-ink hover:bg-ink hover:text-ivory'
+          : 'border border-ivory/40 text-ivory hover:border-ivory hover:bg-ivory hover:text-ink'
+        : tone === 'dark'
+          ? 'text-ink hover:text-rust'
+          : 'text-ivory hover:text-rust';
+  return (
+    <motion.button
+      ref={ref}
+      type="button"
+      onClick={onClick}
+      onMouseMove={handleMove}
+      onMouseEnter={() => setCursor()}
+      onMouseLeave={reset}
+      style={{ x: sx, y: sy }}
+      className={`inline-flex items-center justify-center gap-3 rounded-full px-8 py-4 font-sans text-[11px] uppercase tracking-[0.22em] transition-colors duration-300 ease-editorial focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-4 focus-visible:outline-rust ${palette} ${className}`}
+    >
+      {children}
+    </motion.button>
+  );
 }
-export {
-  MagneticButton
-};
+export { MagneticButton };
