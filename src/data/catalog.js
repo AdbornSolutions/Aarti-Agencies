@@ -13,7 +13,7 @@ const catalogueDefinitions = [
   { folder: 'Salient_Mica_Vol6_Product_Images', name: 'Salient Mica Vol. 6', pdfMatch: 'Salient Mica_Vol-6', focus: 'Decorative surface library', brief: 'A broad decorative laminate portfolio combining fluted, jute, wood, stone, concrete, high-gloss, veneer, suede and coordinated solid finishes.' },
   { folder: 'Sayaji_1mm_2026_Product_Images', name: 'Sayaji 1.00 MM 2026', pdfMatch: 'Sayaji_1mm (2026)', focus: '1.00 mm high-pressure laminates', brief: 'A versatile 1.00 mm surface collection covering synchronized textures, stone and marble looks, woodgrains, louvers, metallics, velvet, suede and solid colours.' },
   { folder: 'Sayaji_Project_2026_Product_Images', name: 'Sayaji Project 2026', pdfMatch: 'Sayaji Project_2026', focus: 'Wood Grains Premium', brief: 'A timber-led collection of teak, walnut, oak, ash, cherry and pine designs, supported by neutral coordinating shades for furniture and interior joinery.' },
-  { folder: 'Shade_Me_2026_Product_Images', name: 'Shade Me 2026', pdfMatch: 'Shade Me_2026', focus: 'Texture and finish collection', brief: 'An expressive surface edit featuring liquid metal, wood panels, cement and stone effects, acrylic colours, geometric blocks, flutes, matt finishes and polished veneer.' },
+  { folder: 'Shade_Me_2026_Product_Images', name: 'Shade Me 2026', pdfMatch: 'Shade Me_2026', imageCode: 'DA-6302', focus: 'Texture and finish collection', brief: 'An expressive surface edit featuring liquid metal, wood panels, cement and stone effects, acrylic colours, geometric blocks, flutes, matt finishes and polished veneer.' },
 ];
 
 const categoryTemplates = [
@@ -135,7 +135,12 @@ const catalogues = catalogueDefinitions.map((catalogue) => ({
   focus: catalogue.focus,
   brief: catalogue.brief,
   count: productFamilies.filter((product) => product.catalogue === catalogue.name).length,
-  imageLoader: productFamilies.find((product) => product.catalogue === catalogue.name)?.imageLoader,
+  imageLoader:
+    allProducts.find(
+      (product) =>
+        product.catalogue === catalogue.name && product.code === catalogue.imageCode,
+    )?.imageLoader ||
+    productFamilies.find((product) => product.catalogue === catalogue.name)?.imageLoader,
   pdf: Object.entries(cataloguePdfModules).find(([path]) => path.includes(catalogue.pdfMatch))?.[1],
 }));
 
