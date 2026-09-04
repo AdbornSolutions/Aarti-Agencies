@@ -1,0 +1,31 @@
+24_HIGH_GLOSS
+Total images: 28
+
+160. 1600 | HG | WHITE GOLDEN PEARL | printed page 78
+161. 1606 | HG | SANDY CHROME | printed page 79
+162. 1607 | HG | DARK UMBER | printed page 79
+163. 1608 | HG | SMERALDO | printed page 80
+164. 1609 | HG | VEINED SLATE GREEN | printed page 81
+165. 1601 | HG | SANDY MIST LIGHT | printed page 82
+166. 1602 | HG | SANDY MIST DARK | printed page 82
+167. 1605 | HG | CROSS CELESTIAL DARK | printed page 83
+168. 1604 | HG | CROSS CELESTIAL LIGHT | printed page 83
+169. 1547 | HG | TANGLE SMOKE | printed page 84
+170. 1577 | HG | FRENCH MARBLE | printed page 84
+171. 1576 | HG | TRENTA STONE | printed page 85
+172. 1550 | HG | VALLY STONE | printed page 85
+173. 1549 | HG | FOSSIL MARBLE | printed page 86
+174. 1548 | HG | OUREA MARBLE | printed page 86
+175. 1729 | HG | SIGNET RED | printed page 88
+176. 1727 | HG | SAHARA RED WOOD | printed page 89
+177. 1726 | HG | SAHARA CREAM WOOD | printed page 90
+178. 1728 | HG | AVOISE OAK | printed page 90
+179. 1590 | HG | NATURAL SATEEN WOOD | printed page 91
+180. 1712 | HG | BURK NATURAL | printed page 91
+181. 1591 | HG | GHANA TEAK | printed page 92
+182. 1705 | HG | WILD WILLOW DARK | printed page 92
+183. 1597 | HG | BELGIUM OAK MEDIUM | printed page 93
+184. 1555 | HG | BELGIUM TEAK DARK | printed page 93
+185. 1902 | HG | SALIENT WOOD | printed page 94
+186. 1554 | HG | BELGIUM TEAK LIGHT | printed page 94
+187. 1708 | HG | BENGALI WOOD LIGHT | printed page 94

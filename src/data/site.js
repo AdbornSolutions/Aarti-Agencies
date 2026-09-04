@@ -4,7 +4,6 @@ const navLinks = [
   { label: 'Products', href: '/products' },
   { label: 'Collections', href: '/collections' },
   { label: 'Applications', href: '/applications' },
-  { label: 'Projects', href: '/projects' },
   { label: 'Contact', href: '/contact' },
 ];
 const textures = [

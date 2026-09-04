@@ -1,0 +1,13 @@
+02_JUTE_COLLECTION
+Total images: 10
+
+003. 1601 | QR | SANDY MIST LIGHT | printed page 5
+004. 1601 | JT | SANDY MIST LIGHT | printed page 6
+005. 1602 | QR | SANDY MIST LIGHT | printed page 7
+006. 1602 | JT | SANDY MIST LIGHT | printed page 8
+012. 1722 | JT | LIGHT JUTE | printed page 16
+013. 1723 | JT | DARK JUTE | printed page 16
+082. 1170 | JT | ALOVERA GREEN | printed page 39
+083. 1104 | JT | FROSTY WHITE | printed page 39
+084. 1118 | JT | GOTHIC GREY | printed page 40
+085. 1165 | JT | TIDAL SAND | printed page 40

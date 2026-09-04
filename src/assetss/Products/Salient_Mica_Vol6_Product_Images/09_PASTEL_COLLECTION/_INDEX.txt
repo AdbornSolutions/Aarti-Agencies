@@ -1,0 +1,39 @@
+09_PASTEL_COLLECTION
+Total images: 36
+
+039. 1104 | HG | FROSTY WHITE | printed page 33
+040. 1105 | HG | IVORY | printed page 33
+041. 1114 | HG | CHOCOLATE | printed page 33
+042. 1164 | HG | SMOKEY BLUE | printed page 33
+043. 1165 | HG | TIDAL | printed page 33
+044. 1166 | HG | TWILIGHT GREY | printed page 33
+045. 1117 | HG | SLATE GREY | printed page 33
+046. 1167 | HG | ICE BLUE | printed page 33
+047. 1168 | HG | BABY PINK | printed page 33
+048. 1169 | HG | BABY GREEN | printed page 34
+049. 1170 | HG | ALOVERA GREEN | printed page 34
+050. 1171 | HG | ASH GREY | printed page 34
+051. 1172 | HG | ROCKY BLUE | printed page 34
+052. 1173 | HG | ADROIT BLUE | printed page 34
+053. 1118 | HG | GOTHIC GREY | printed page 34
+054. 1174 | HG | AIROIT BLUE | printed page 34
+055. 1175 | HG | PINK PUFF | printed page 34
+056. 1176 | HG | BABY PEACH | printed page 34
+057. 1104 | VF | FROSTY WHITE | printed page 35
+058. 1105 | VF | IVORY | printed page 35
+059. 1114 | VF | CHOCOLATE | printed page 35
+060. 1164 | VF | SMOKEY BLUE | printed page 35
+061. 1165 | VF | TIDAL | printed page 35
+062. 1173 | VF | ADROIT BLUE | printed page 35
+063. 1166 | VF | TWILIGHT GREY | printed page 35
+064. 1117 | VF | SLATE GREY | printed page 35
+065. 1167 | VF | ICE BLUE | printed page 35
+066. 1168 | VF | BABY PINK | printed page 35
+067. 1169 | VF | BABY GREEN | printed page 36
+068. 1170 | VF | ALOVERA GREEN | printed page 36
+069. 1171 | VF | ASH GREY | printed page 36
+070. 1172 | VF | ROCKY BLUE | printed page 36
+071. 1118 | VF | GOTHIC GREY | printed page 36
+072. 1174 | VF | AIROIT BLUE | printed page 36
+073. 1175 | VF | PINK PUFF | printed page 36
+074. 1176 | VF | BABY PEACH | printed page 36

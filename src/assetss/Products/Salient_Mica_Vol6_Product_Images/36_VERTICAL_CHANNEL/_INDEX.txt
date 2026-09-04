@@ -1,0 +1,6 @@
+36_VERTICAL_CHANNEL
+Total images: 3
+
+246. 1321 | VC | IRISH BROWN | printed page 123
+247. 1578 | VC | VINTAGE OAK LIGHT | printed page 123
+248. 1579 | VC | VINTAGE OAK DARK | printed page 123

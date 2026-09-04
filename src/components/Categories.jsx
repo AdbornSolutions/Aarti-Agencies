@@ -5,6 +5,7 @@ import { Link } from 'react-router-dom';
 import { productCategories } from '../data/catalog';
 import { DrawLine, FadeUp, WordReveal, EASE } from './Reveal';
 import { useCursor } from './CursorProvider';
+import { CatalogImage } from './CatalogImage';
 const MotionLink = motion.create(Link);
 
 function Categories() {
@@ -35,7 +36,7 @@ function Categories() {
       </div>
       {/* Desktop: dimming panel row. Mobile: horizontal swipe rail. */}
       <div
-        className="mt-12 flex snap-x snap-mandatory gap-4 overflow-x-auto px-6 pb-4 md:px-10 lg:mt-16 lg:grid lg:grid-cols-4 lg:gap-3 lg:overflow-visible lg:pb-0 xl:grid-cols-7"
+        className="mt-12 flex snap-x snap-mandatory gap-4 overflow-x-auto px-6 pb-4 md:px-10 lg:mt-16 lg:grid lg:grid-cols-4 lg:gap-3 lg:overflow-visible lg:pb-0 xl:grid-cols-8"
         onMouseLeave={() => setActive(null)}
       >
         {productCategories.map((category, i) => {
@@ -55,13 +56,11 @@ function Categories() {
               animate={{ opacity: dimmed ? 0.42 : 1 }}
               transition={{ duration: 0.5, ease: EASE }}
             >
-              <motion.img
-                src={category.image}
+              <CatalogImage
+                loader={category.imageLoader}
                 alt={category.name}
                 loading="lazy"
-                className="absolute inset-0 h-full w-full object-cover"
-                animate={{ scale: active === i ? 1.07 : 1 }}
-                transition={{ duration: 1.1, ease: EASE }}
+                className="absolute inset-0 h-full w-full object-cover transition-transform duration-700 ease-editorial group-hover:scale-[1.035]"
               />
               <div
                 className="absolute inset-0 bg-[linear-gradient(to_top,rgba(23,23,22,0.9),rgba(23,23,22,0.15))]"

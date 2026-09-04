@@ -1,0 +1,22 @@
+15_SOLID_HIGH_GLOSS
+Total images: 19
+
+100. 1116 | HG | LIGHT GREY | printed page 43
+101. 1142 | HG | ORANGE | printed page 43
+102. 1101 | HG | SUPER WHITE | printed page 43
+103. 1115 | HG | DARK GREY | printed page 43
+104. 1130 | HG | MAROON | printed page 43
+105. 1102 | HG | NATURAL WHITE | printed page 43
+106. 1103 | HG | OFF WHITE | printed page 43
+107. 1151 | HG | BLACK | printed page 43
+108. 1131 | HG | RED | printed page 43
+109. 1162 | HG | PEACOCK GREEN | printed page 44
+110. 1121 | HG | PURPLE | printed page 44
+111. 1125 | HG | PINK | printed page 44
+112. 1146 | HG | LIME YELLOW | printed page 44
+113. 1160 | HG | PARROT GREEN | printed page 44
+114. 1134 | HG | BLUE | printed page 44
+115. 1145 | HG | YELLOW | printed page 44
+116. 1111 | HG | BROWN | printed page 44
+117. 1161 | HG | GREEN | printed page 44
+118. 1135 | HG | SKY BLUE | printed page 44

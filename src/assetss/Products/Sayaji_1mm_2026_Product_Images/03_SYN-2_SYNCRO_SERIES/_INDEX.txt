@@ -1,0 +1,7 @@
+Finish Code: SYN-2
+Products: 4
+
+005. 5568 | SYN-2 | CHESTNUT WOOD | PDF page 7
+006. 5565 | SYN-2 | DARK ESPRESSO | PDF page 7
+007. 5567 | SYN-2 | NATURAL TEAK | PDF page 8
+009. 5566 | SYN-2 | HONEY OAK | PDF page 8
