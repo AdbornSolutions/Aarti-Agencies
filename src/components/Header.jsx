@@ -1,6 +1,6 @@
 import { useEffect, useState } from 'react';
 import { motion } from 'framer-motion';
-import { SearchIcon, MenuIcon, XIcon } from 'lucide-react';
+import { MenuIcon, XIcon } from 'lucide-react';
 import { Link, NavLink } from 'react-router-dom';
 import { navLinks } from '../data/site';
 import { useCursor } from './CursorProvider';
@@ -49,14 +49,6 @@ function Header({ ready }) {
           ))}
         </nav>
         <div className="flex items-center gap-3">
-          <button
-            type="button"
-            {...hoverProps()}
-            aria-label="Search surfaces"
-            className="flex h-10 w-10 items-center justify-center rounded-full border border-ivory/20 text-ivory transition-colors duration-300 ease-editorial hover:border-rust hover:text-rust"
-          >
-            <SearchIcon className="h-4 w-4" strokeWidth={1.4} />
-          </button>
           <Link
             to="/collections"
             {...hoverProps()}
