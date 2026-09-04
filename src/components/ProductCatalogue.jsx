@@ -11,7 +11,8 @@ function ProductCatalogue() {
   const category = productCategories.some(({ slug }) => slug === requestedCategory)
     ? requestedCategory
     : 'all';
-  const [catalogue, setCatalogue] = useState('all');
+  const requestedCatalogue = searchParams.get('catalogue');
+  const catalogue = catalogueNames.includes(requestedCatalogue) ? requestedCatalogue : 'all';
   const [query, setQuery] = useState('');
   const [visibleCount, setVisibleCount] = useState(24);
 
@@ -32,10 +33,18 @@ function ProductCatalogue() {
     [],
   );
 
-  const changeCategory = (nextCategory) => {
+  const changeCatalogue = (nextCatalogue) => {
     const nextParams = new URLSearchParams(searchParams);
-    if (nextCategory === 'all') nextParams.delete('category');
-    else nextParams.set('category', nextCategory);
+    if (nextCatalogue === 'all') nextParams.delete('catalogue');
+    else nextParams.set('catalogue', nextCatalogue);
+    setSearchParams(nextParams, { replace: true });
+  };
+
+  const resetFilters = () => {
+    setQuery('');
+    const nextParams = new URLSearchParams(searchParams);
+    nextParams.delete('category');
+    nextParams.delete('catalogue');
     setSearchParams(nextParams, { replace: true });
   };
 
@@ -90,7 +99,7 @@ function ProductCatalogue() {
               <span className="sr-only">Filter by catalogue</span>
               <select
                 value={catalogue}
-                onChange={(event) => setCatalogue(event.target.value)}
+                onChange={(event) => changeCatalogue(event.target.value)}
                 className="min-w-56 bg-transparent font-sans text-xs uppercase tracking-[0.12em] text-ink outline-none"
               >
                 <option value="all">All catalogues</option>
@@ -143,7 +152,7 @@ function ProductCatalogue() {
         ) : (
           <div className="mt-8 border border-ink/15 px-6 py-16 text-center">
             <h3 className="font-display text-3xl text-ink">No matching product family</h3>
-            <button type="button" onClick={() => { setQuery(''); setCatalogue('all'); changeCategory('all'); }} className="mt-5 font-sans text-[10px] uppercase tracking-[0.2em] text-rust">
+            <button type="button" onClick={resetFilters} className="mt-5 font-sans text-[10px] uppercase tracking-[0.2em] text-rust">
               Clear all filters
             </button>
           </div>

@@ -1,6 +1,5 @@
 import { PageHero } from '../components/common/PageHero';
-import { FeaturedCollection } from '../components/FeaturedCollection';
-import { TextureExperience } from '../components/TextureExperience';
+import { CatalogueCollections } from '../components/CatalogueCollections';
 import { imagery } from '../data/site';
 
 function CollectionsPage() {
@@ -8,12 +7,11 @@ function CollectionsPage() {
     <>
       <PageHero
         eyebrow="Curated Collections"
-        title="Texture. Tone. Character."
-        description="Discover considered surface stories, from warm natural grains and tactile mattes to expressive stone and high-clarity finishes."
+        title="Five Catalogues. Distinct Surface Stories."
+        description="Explore the official Acrylica, Salient Mica, Sayaji and Shade Me collections, each connected to real product designs and its complete catalogue."
         image={imagery.collectionTexture}
       />
-      <TextureExperience />
-      <FeaturedCollection />
+      <CatalogueCollections />
     </>
   );
 }
