@@ -1,6 +1,7 @@
 import { useEffect, useRef, useState } from 'react';
 import { motion, useScroll, useTransform } from 'framer-motion';
 import { ArrowRightIcon } from 'lucide-react';
+import { Link } from 'react-router-dom';
 import { textures } from '../data/site';
 import { EASE } from './Reveal';
 import { useCursor } from './CursorProvider';
@@ -50,8 +51,8 @@ function TextureExperience({ stacked = false }) {
               </article>
             ))}
           </div>
-          <a
-            href="#collections"
+          <Link
+            to="/collections"
             {...hoverProps()}
             className="group mt-16 inline-flex items-center gap-3 font-sans text-[11px] uppercase tracking-[0.22em] text-ivory"
           >
@@ -60,7 +61,7 @@ function TextureExperience({ stacked = false }) {
               className="h-4 w-4 transition-transform duration-500 ease-editorial group-hover:translate-x-1.5"
               strokeWidth={1.3}
             />
-          </a>
+          </Link>
         </div>
       </section>
     );
@@ -147,8 +148,8 @@ function TextureExperience({ stacked = false }) {
                 </p>
               </motion.div>
             </div>
-            <a
-              href="#collections"
+            <Link
+              to="/collections"
               {...hoverProps()}
               className="group inline-flex items-center gap-3 font-sans text-[11px] uppercase tracking-[0.22em]"
               style={{ color: current.ink }}
@@ -158,7 +159,7 @@ function TextureExperience({ stacked = false }) {
                 className="h-4 w-4 transition-transform duration-500 ease-editorial group-hover:translate-x-1.5"
                 strokeWidth={1.3}
               />
-            </a>
+            </Link>
           </div>
           <div className="mt-6 flex gap-2" aria-hidden="true">
             {textures.map((texture, i) => (

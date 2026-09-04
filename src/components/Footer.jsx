@@ -5,7 +5,8 @@ import { Link } from 'react-router-dom';
 import { navLinks } from '../data/site';
 import { DrawLine, EASE } from './Reveal';
 import { useCursor } from './CursorProvider';
-const socials = ['Instagram', 'Facebook', 'LinkedIn'];
+const mapUrl =
+  'https://www.google.com/maps/search/?api=1&query=16+A+Arti+Agencies+opposite+Jagat+Regency+near+Hari+Har+Mandir+Sudarshan+Square+Old+Bhandara+Road+Lakadganj+Nagpur';
 function Footer() {
   const { hoverProps } = useCursor();
   const [email, setEmail] = useState('');
@@ -17,6 +18,9 @@ function Footer() {
       return;
     }
     setStatus('done');
+    const subject = encodeURIComponent('Subscribe me to Arti Agencies updates');
+    const body = encodeURIComponent(`Please add ${email} to the Arti Agencies mailing list.`);
+    window.location.href = `mailto:artiagencies123@gmail.com?subject=${subject}&body=${body}`;
     setEmail('');
   };
   return (
@@ -59,26 +63,15 @@ function Footer() {
                 <a href="mailto:artiagencies123@gmail.com">artiagencies123@gmail.com</a>
               </p>
               <p className="leading-relaxed text-ivory/50">
-                16 A, Arti Agencies, opposite Jagat Regency,
-                <br />
-                near Hari Har Mandir, Sudarshan Square,
-                <br />
-                Old Bhandara Road, Lakadganj, Nagpur 08
+                <a href={mapUrl} target="_blank" rel="noreferrer" className="transition-colors hover:text-rust">
+                  16 A, Arti Agencies, opposite Jagat Regency,
+                  <br />
+                  near Hari Har Mandir, Sudarshan Square,
+                  <br />
+                  Old Bhandara Road, Lakadganj, Nagpur 08
+                </a>
               </p>
             </address>
-            <ul className="mt-6 flex gap-4">
-              {socials.map((social) => (
-                <li key={social}>
-                  <a
-                    href="#top"
-                    {...hoverProps()}
-                    className="font-sans text-[10px] uppercase tracking-[0.2em] text-ivory/45 transition-colors duration-300 ease-editorial hover:text-rust"
-                  >
-                    {social}
-                  </a>
-                </li>
-              ))}
-            </ul>
           </div>
           <div className="lg:col-span-3">
             <p className="font-display text-3xl">Stay Inspired.</p>

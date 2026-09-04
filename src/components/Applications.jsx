@@ -1,4 +1,5 @@
 import { applications } from '../data/site';
+import { Link } from 'react-router-dom';
 import { DrawLine, FadeUp, WordReveal } from './Reveal';
 import { useCursor } from './CursorProvider';
 function Applications() {
@@ -24,9 +25,9 @@ function Applications() {
       </div>
       <div className="mx-auto mt-12 grid max-w-[1600px] auto-rows-[220px] grid-cols-1 gap-3 px-6 md:auto-rows-[240px] md:grid-cols-4 md:px-10">
         {applications.map((application) => (
-          <a
+          <Link
             key={application.name}
-            href="#projects"
+            to={`/contact?product=${encodeURIComponent(application.name)}`}
             {...hoverProps('View')}
             className={`group relative overflow-hidden ${application.span}`}
           >
@@ -47,7 +48,7 @@ function Applications() {
             <span className="absolute bottom-5 left-5 right-5 translate-y-3 font-display text-2xl font-light text-ivory opacity-0 transition-[opacity,transform] duration-500 ease-editorial group-hover:translate-y-0 group-hover:opacity-100">
               {application.name}
             </span>
-          </a>
+          </Link>
         ))}
       </div>
     </section>

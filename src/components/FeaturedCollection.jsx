@@ -1,6 +1,7 @@
 import { useRef } from 'react';
 import { motion, useScroll, useTransform } from 'framer-motion';
 import { ArrowRightIcon } from 'lucide-react';
+import { Link } from 'react-router-dom';
 import { imagery } from '../data/site';
 import { CurtainImage, DrawLine, FadeUp, EASE } from './Reveal';
 import { useCursor } from './CursorProvider';
@@ -66,8 +67,8 @@ function FeaturedCollection() {
               </dl>
             </FadeUp>
             <FadeUp delay={0.35}>
-              <a
-                href="#collections"
+              <Link
+                to="/collections"
                 {...hoverProps()}
                 className="group mt-12 inline-flex items-center gap-4 font-sans text-[11px] uppercase tracking-[0.22em] text-ivory"
               >
@@ -75,7 +76,7 @@ function FeaturedCollection() {
                 <span className="flex h-10 w-10 items-center justify-center rounded-full border border-ivory/25 transition-colors duration-300 ease-editorial group-hover:border-rust group-hover:bg-rust">
                   <ArrowRightIcon className="h-3.5 w-3.5" strokeWidth={1.3} />
                 </span>
-              </a>
+              </Link>
             </FadeUp>
           </div>
           <motion.div style={{ y: fastY }} className="flex flex-col gap-6 lg:col-span-3">
