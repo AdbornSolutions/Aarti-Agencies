@@ -7,38 +7,6 @@ const navLinks = [
   { label: 'Projects', href: '/projects' },
   { label: 'Contact', href: '/contact' },
 ];
-const categories = [
-  {
-    index: '01',
-    name: 'Decorative Laminates',
-    blurb: 'Contemporary and classic designs for furniture and interior applications.',
-    image: '/9ce7fbc4-5b3b-400b-97de-e601e0add92c.jpg',
-  },
-  {
-    index: '02',
-    name: 'High-Pressure Laminates',
-    blurb: 'Durable surface solutions for demanding furniture and interior requirements.',
-    image: '/2571978b-fd12-40f8-9f6d-5eaba4d67673.jpg',
-  },
-  {
-    index: '03',
-    name: 'High-Gloss Finishes',
-    blurb: 'Premium-looking surfaces for modern furniture, kitchens and contemporary interiors.',
-    image: '/92101459-20a6-45db-a4c3-4733cc03817b.jpg',
-  },
-  {
-    index: '04',
-    name: 'Wood & Natural Finishes',
-    blurb: 'Wood-inspired patterns and finishes that bring warmth and character to interiors.',
-    image: '/6bf361c1-92fe-4af3-93e4-41e2ce82b664.jpg',
-  },
-  {
-    index: '05',
-    name: 'Textured & Designer Surfaces',
-    blurb: 'Distinctive textures and designs for customers looking to create unique interiors.',
-    image: '/ee756f37-e1f3-497b-adc5-b4c9a3c28f97.jpg',
-  },
-];
 const textures = [
   {
     name: 'Natural Wood',
@@ -174,4 +142,4 @@ const imagery = {
   collectionInterior: kitchen,
   cta: lobby,
 };
-export { applications, categories, imagery, navLinks, projects, strengths, textures };
+export { applications, imagery, navLinks, projects, strengths, textures };

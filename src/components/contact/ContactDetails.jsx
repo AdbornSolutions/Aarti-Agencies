@@ -1,12 +1,19 @@
 import { useState } from 'react';
 import { ArrowRightIcon } from 'lucide-react';
+import { useSearchParams } from 'react-router-dom';
 import { DrawLine, FadeUp, WordReveal } from '../Reveal';
 
 const mapUrl =
   'https://www.google.com/maps/search/?api=1&query=16+A+Arti+Agencies+opposite+Jagat+Regency+near+Hari+Har+Mandir+Sudarshan+Square+Old+Bhandara+Road+Lakadganj+Nagpur';
 
 function ContactDetails() {
-  const [form, setForm] = useState({ name: '', email: '', message: '' });
+  const [searchParams] = useSearchParams();
+  const requestedProduct = searchParams.get('product');
+  const [form, setForm] = useState(() => ({
+    name: '',
+    email: '',
+    message: requestedProduct ? `I would like shade and availability details for ${requestedProduct}.` : '',
+  }));
   const update = (event) =>
     setForm((current) => ({ ...current, [event.target.name]: event.target.value }));
   const submit = (event) => {

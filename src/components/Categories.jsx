@@ -1,9 +1,12 @@
 import { useState } from 'react';
 import { motion } from 'framer-motion';
 import { ArrowUpRightIcon } from 'lucide-react';
-import { categories } from '../data/site';
+import { Link } from 'react-router-dom';
+import { productCategories } from '../data/catalog';
 import { DrawLine, FadeUp, WordReveal, EASE } from './Reveal';
 import { useCursor } from './CursorProvider';
+const MotionLink = motion.create(Link);
+
 function Categories() {
   const [active, setActive] = useState(null);
   const { setCursor, clearCursor } = useCursor();
@@ -32,15 +35,15 @@ function Categories() {
       </div>
       {/* Desktop: dimming panel row. Mobile: horizontal swipe rail. */}
       <div
-        className="mt-12 flex snap-x snap-mandatory gap-4 overflow-x-auto px-6 pb-4 md:px-10 lg:mt-16 lg:grid lg:grid-cols-5 lg:gap-3 lg:overflow-visible lg:pb-0"
+        className="mt-12 flex snap-x snap-mandatory gap-4 overflow-x-auto px-6 pb-4 md:px-10 lg:mt-16 lg:grid lg:grid-cols-4 lg:gap-3 lg:overflow-visible lg:pb-0 xl:grid-cols-7"
         onMouseLeave={() => setActive(null)}
       >
-        {categories.map((category, i) => {
+        {productCategories.map((category, i) => {
           const dimmed = active !== null && active !== i;
           return (
-            <motion.a
+            <MotionLink
               key={category.name}
-              href="#collections"
+              to={`/products?category=${category.slug}#catalogue`}
               onMouseEnter={() => {
                 setActive(i);
                 setCursor('Explore');
@@ -90,7 +93,7 @@ function Categories() {
                   </span>
                 </motion.div>
               </div>
-            </motion.a>
+            </MotionLink>
           );
         })}
       </div>
