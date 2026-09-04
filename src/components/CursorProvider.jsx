@@ -76,19 +76,17 @@ function CursorProvider({ enabled, children }) {
           }}
         >
           <motion.span
-            className="flex items-center justify-center rounded-full border border-ivory/60"
+            className="flex items-center justify-center rounded-full border border-ink"
             animate={{
               width: size,
               height: size,
-              backgroundColor: state.label
-                ? 'rgba(182, 94, 60, 0.92)'
-                : state.active
-                  ? 'rgba(245, 241, 232, 0.12)'
-                  : 'rgba(245, 241, 232, 0.95)',
-              borderColor: state.label ? 'rgba(182,94,60,0)' : 'rgba(245,241,232,0.55)',
+              backgroundColor: state.active
+                ? 'rgba(23, 23, 22, 0.88)'
+                : 'rgba(23, 23, 22, 0.98)',
+              borderColor: 'rgba(23, 23, 22, 0.95)',
             }}
             transition={{ duration: 0.28, ease: [0.23, 1, 0.32, 1] }}
-            style={{ mixBlendMode: state.label ? 'normal' : 'difference' }}
+            style={{ mixBlendMode: 'normal' }}
           >
             <AnimatePresence>
               {state.label && (

@@ -3,7 +3,6 @@ const navLinks = [
   { label: 'About Us', href: '/about-us' },
   { label: 'Products', href: '/products' },
   { label: 'Collections', href: '/collections' },
-  { label: 'Applications', href: '/applications' },
   { label: 'Contact', href: '/contact' },
 ];
 const textures = [
